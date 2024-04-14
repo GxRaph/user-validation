@@ -1,0 +1,28 @@
+#secretMessage {
+    display: none; /* Hides the secret message at first */
+    position: fixed; /* Positions the message relative to the viewport */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Center */
+    z-index: 9999; /* Makes it above other content */
+    background-color: white; 
+    padding: 20px; 
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#secretMessage img {
+    max-width: 100%;
+    height: auto; 
+}
+
+body {
+    background: linear-gradient(to right, #383f50, #58504e);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+input[type="submit"] {
+    font-size: 18px;
+    background-color: #383f50bd;
+    border-radius: 50px;
+}
