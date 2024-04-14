@@ -1,0 +1,30 @@
+<!--Tyler Ray Michael Egner-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Input</title>
+    <link rel="stylesheet" href="css.css">                          <!--css link to shape my secret image how I want it-->
+</head>
+<body>
+    <form id="registrationForm" onsubmit="validateForm(); return false;"> <!--This line was very important to return to the form to correct the the input if it is not valid... "return false;" -->
+        <label for="firstname">First Name</label>                       <!-- label for first name -->
+        <input type="text" id="firstname" name="confirmFirstname">  <!--lets user input text for first name / ids for my getElementByID's for the js file-->
+    
+        <label for="lastname">Last Name</label>                      <!-- label for last name -->
+        <input type="text" id="lastname" name="confirmLastname">    <!--text input and ids-->
+
+        <label for="zipcode">Zip Code</label>                       <!-- zip code -->
+        <input type="number" id="zipcode" name="zipcode">               <!--this time i used a number input for fun-->
+
+        <input type="submit" value="Submit"><br><br>                <!--submit form-->
+    </form>
+<div id="secretMessage"                                             
+style="display:none;">                                      <!--Makes my secret image invisible at first-->
+<img src="IMG_5576.jpeg" alt="secretMessage">              <!--Link and name for my secret image-->
+!!CONGRATULATIONS!! You've Completed The Form Correctly!!  <!--Congrats message-->
+</div>
+    <script src="js.js"></script>                                   <!--js link-->
+</body>
+</html>
